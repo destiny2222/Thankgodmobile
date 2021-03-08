@@ -27,7 +27,7 @@
 <body>
 <header>
 <div class="banner" >
-	<div class="header" id="header">	
+	<div class="header nav" id="header">	
 			<div class="logo">
 			   <h1><a href="index.html"><i><img src="./Assets/images/cell.png" alt=" " /></i>THANKGOD MOBILE NIG</a></h1>
 			</div>
@@ -107,7 +107,7 @@
 				<div class="bills_payment">
 		            <div class="plan-title">
                             <div class="text-center">
-                            	<img src="Assets/images/gotv_logo.png" width="90px" />
+                            	<img src="Assets/images/gotv.png" width="100px" />
                             </div>
                             <hr>
                         </div>
@@ -235,11 +235,7 @@
 <div class="footer">
 	<div class="container">
 		<h2><a href="index.html">THANKGOD MOBILE NIG</a></h2>
-		<p>© 2020 THANKGOD MOBILE NIG. All Rights Reserved | Design by 
-			<a href=" https://dexnovate.com/" target="_blank">
-			   <img src="./Assets/images/dn1.png" width="90px">
-		    </a>
-		</p>
+		<p>© 2020 THANKGOD MOBILE NIG. All Rights Reserved |</p>
 		<ul>
 			<li><a class="face1" href="#"></a></li>
 			<li><a class="face2"href="#"></a></li>
@@ -252,7 +248,7 @@
 		<script src="./Assets/js/bootstrap.js"></script>
 		<script src="./Assets/js/responsiveslides.min.js"></script>
 		<script type="./Assets/fontawesome-free-5.15.1-web/js/all.min.js"></script>
-   <script>
+<script>
     $(function () {
       $("#slider").responsiveSlides({
       	auto: true,
@@ -261,6 +257,38 @@
         pager: true,
       });
     });
+</script>
+<script type="text/javascript">
+  	$(document).ready(function() {
+	// grab the initial top offset of the navigation 
+	var stickyNavTop = $('.nav').offset().top;
+
+
+	var stickyNav = function(){
+	var scrollTop = $(window).scrollTop(); 
+
+
+	if (scrollTop > stickyNavTop) { 
+	$('.nav').addClass('sticky');
+	// $('.bop').addClass('visible-title');
+	} else {
+	$('.nav').removeClass('sticky'); 
+	// $('.bop').removeClass('visible-title');
+	}
+	};
+
+
+	stickyNav();
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+	stickyNav();
+	});
+	});
+
+
+
+	console.log
+
   </script>
 <!-- //for bootstrap working -->
 		<script src="./Assets/js/jquery.2.3.1.min.js"></script>

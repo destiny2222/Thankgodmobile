@@ -27,7 +27,7 @@
 <body>
 <header>
 <div class="banner" >
-	<div class="header" id="header">	
+	<div class="header nav" id="header">	
 			<div class="logo">
 			   <h1><a href="index.html"><i><img src="./Assets/images/cell.png" alt=" " /></i>THANKGOD MOBILE NIG</a></h1>
 			</div>
@@ -355,6 +355,37 @@
       });
     });
   </script>
+<script type="text/javascript">
+  	$(document).ready(function() {
+	// grab the initial top offset of the navigation 
+	var stickyNavTop = $('.nav').offset().top;
 
+
+	var stickyNav = function(){
+	var scrollTop = $(window).scrollTop(); 
+
+
+	if (scrollTop > stickyNavTop) { 
+	$('.nav').addClass('sticky');
+	// $('.bop').addClass('visible-title');
+	} else {
+	$('.nav').removeClass('sticky'); 
+	// $('.bop').removeClass('visible-title');
+	}
+	};
+
+
+	stickyNav();
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+	stickyNav();
+	});
+	});
+
+
+
+	console.log
+
+  </script>
 </body>
 </html>

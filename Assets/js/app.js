@@ -16,3 +16,33 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+
+$(document).ready(function() {
+// grab the initial top offset of the navigation 
+var stickyNavTop = $('.nav').offset().top;
+
+
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop(); 
+
+
+if (scrollTop > stickyNavTop) { 
+$('.nav').addClass('sticky');
+// $('.bop').addClass('visible-title');
+} else {
+$('.nav').removeClass('sticky'); 
+// $('.bop').removeClass('visible-title');
+}
+};
+
+
+stickyNav();
+// and run it again every time you scroll
+$(window).scroll(function() {
+stickyNav();
+});
+});
+
+
+
+console.log

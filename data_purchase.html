@@ -27,7 +27,7 @@
 <body>
 <header>
 <div class="banner" >
-    <div class="header" id="header">    
+    <div class="header nav" id="header">    
             <div class="logo">
                <h1><a href="index.html"><i><img src="./Assets/images/cell.png" alt=" " /></i>THANKGOD MOBILE NIG</a></h1>
             </div>
@@ -103,25 +103,7 @@
     <section>
     	<div class="container">
             <div class="pricing-table pricing-table-style-1 mb-5">
-                <div class="row " style="margin-top: 60px;">
-                    <div class="col-lg-3 col-md-6 p-0 plan plan-most-popular border-color-primary">
-                        <div class="plan-title" style="background-color: #257934">
-                            <div>
-                            	<img src="Assets/images/glo_logo.png" width="70px">
-                            </div>
-                        </div>
-                        <div class="plan-detail" style="background: #257934;">
-                            <ul>
-                                <li>1.8gb &nbsp;&nbsp; - &nbsp;&nbsp; ₦950</li>
-                                <li>4.5gb &nbsp;&nbsp; - &nbsp;&nbsp; ₦1,900</li>
-                                <li>7gb &nbsp;&nbsp;- &nbsp;&nbsp; ₦2,400</li>
-                                <li>9gb &nbsp;&nbsp; - &nbsp;&nbsp; ₦2,700</li>
-                                <li>12gb &nbsp;&nbsp;- &nbsp;&nbsp; ₦3600</li>
-                                <li>Data Bal Code: *777#</li>
-                            </ul>
-                            <a href="page/login/index.html" class="btn btn-outline-primary btn-rounded pr-5 pl-5">BUY NOW</a>
-                        </div>
-                    </div>    
+                <div class="row " style="margin-top: 60px;">    
                     <div class="col-lg-3 col-md-6 p-0 plan plan-most-popular border-color-primary">
                         <div class="plan-title" style="background-color: #ffc13b">
                             <div class="">
@@ -140,6 +122,26 @@
                             <a href="page/login/index.html" class="btn btn-outline-primary btn-rounded pr-5 pl-5">BUY NOW</a>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 col-md-6 p-0 plan plan-most-popular border-color-primary">
+                        <div class="plan-title" style="background-color: #257934">
+                            <div>
+                                <img src="Assets/images/glo_logo.png" width="70px">
+                            </div>
+                        </div>
+                        <div class="plan-detail" style="background: #257934;">
+                            <ul>
+                                <li>1.8gb &nbsp;&nbsp; - &nbsp;&nbsp; ₦950</li>
+                                <li>4.5gb &nbsp;&nbsp; - &nbsp;&nbsp; ₦1,900</li>
+                                <li>7gb &nbsp;&nbsp;- &nbsp;&nbsp; ₦2,400</li>
+                                <li>9gb &nbsp;&nbsp; - &nbsp;&nbsp; ₦2,700</li>
+                                <li>12gb &nbsp;&nbsp;- &nbsp;&nbsp; ₦3600</li>
+                                <li>Data Bal Code: *777#</li>
+                            </ul>
+                            <a href="page/login/index.html" class="btn btn-outline-primary btn-rounded pr-5 pl-5">BUY NOW</a>
+                        </div>
+                    </div>
+
                     <div class="col-lg-3 col-md-6 p-0 plan plan-most-popular border-color-primary">
                         <div class="plan-title" style="background-color: #006f53">
                             <img src="Assets/images/" width="">
@@ -264,6 +266,38 @@
         pager: true,
       });
     });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // grab the initial top offset of the navigation 
+    var stickyNavTop = $('.nav').offset().top;
+
+
+    var stickyNav = function(){
+    var scrollTop = $(window).scrollTop(); 
+
+
+    if (scrollTop > stickyNavTop) { 
+    $('.nav').addClass('sticky');
+    // $('.bop').addClass('visible-title');
+    } else {
+    $('.nav').removeClass('sticky'); 
+    // $('.bop').removeClass('visible-title');
+    }
+    };
+
+
+    stickyNav();
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+    stickyNav();
+    });
+    });
+
+
+
+    console.log
+
   </script>
 <!-- //for bootstrap working -->
         <script src="./Assets/js/jquery.2.3.1.min.js"></script>

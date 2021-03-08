@@ -12,6 +12,7 @@
     background-clip: padding-box;
     border: 0 solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
+    box-shadow: 0 0 15px 1px rgba(69,65,78,.2);
 
 
 
@@ -41,6 +42,11 @@
         transform: translate3d(10px, 0, 0);
 }
 
+
+.nav1 li:hover .dropdown-menu {
+    display: block;
+}
+
 .header ,.menu-sm-info {
     padding-left: 25px;
     padding-bottom: 15px;
@@ -54,13 +60,15 @@
 nav , .nav1 li {
     border-bottom: 1px solid #303537;
 }
+
 }
 
 
-/*    .header nav >ul  li, .dropdown-menu, .dropdown:hover , .dropdown-menu:hover {
-        top: 100%;
-        left: 0;
-        display: block;
-        opacity: 1;
-        margin-top: 0;
-    }*/
+    .sticky {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      border-top: 0;
+    }
