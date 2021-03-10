@@ -3838,6 +3838,7 @@ ul.nav1{
 @media screen and (max-width: 900px){
   .get_to_know_us p , .about_menu p{
      width: 95.6%;
+     /*word-spacing: */
   }
 
   .text_about{
@@ -4357,7 +4358,7 @@ ul.nav1{
 
 .bills_payment{
   background: #c0c0c0;
-  padding:40px  0;
+  padding:40px  30px;
   margin-top: 50px;
   margin-bottom: 50px;
   box-sizing: 50px;
@@ -4371,8 +4372,8 @@ ul.nav1{
        margin-left: 25px;
    }
 .bills_payment{
-    /*font-size: 10px;*/
-    /*font-weight: 900;*/
+     padding:40px  0;
+  
 }
 
 }

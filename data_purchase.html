@@ -144,7 +144,7 @@
 
                     <div class="col-lg-3 col-md-6 p-0 plan plan-most-popular border-color-primary">
                         <div class="plan-title" style="background-color: #006f53">
-                            <img src="Assets/images/" width="">
+                            <img src="Assets/images/9mobile_logo.png" width="80px">
                         </div>
                         <div class="plan-detail" style="background: #006f53;">
                             <ul>
@@ -161,7 +161,7 @@
                     <div class="col-lg-3 col-md-6 p-0 plan plan-most-popular border-color-primary">
                         <div class="plan-title" style="background-color: #f82547">
                             <div>
-                                <img src="Assets/images/">
+                                <img src="Assets/images/AIRTEL .png" width="100px">
                             </div>
                         </div>
                         <div class="plan-detail" style="background: #F82547;">
@@ -299,6 +299,44 @@
     console.log
 
   </script>
+<!-- GetButton.io widget --> 
+<script> 
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?71626';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Destiny",
+      "brandSubTitle":"Typically replies within a seconds",
+      "brandImg":"https://Assist/img/dexwhite.png",
+      "welcomeText":"Hi, there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"2347069792998"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script> 
+<!-- /GetButton.io widget -->
 <!-- //for bootstrap working -->
         <script src="./Assets/js/jquery.2.3.1.min.js"></script>
         <script src="./Assets/js/responsiveslides.min.js"></script>
