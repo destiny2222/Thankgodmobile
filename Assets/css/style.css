@@ -4118,6 +4118,31 @@ ul.nav1{
     margin: 0;
 }
 
+.btn-warning{
+	background:#ffc13b;
+	border: #ffc13b;
+	font-weight: 800;
+}
+
+.success{
+	background: #006f53;
+	font-weight:800;
+	color: #fff;
+	border: #006f53;
+}
+
+.btn-success{
+	background: #257934;
+	font-weight:800;
+	border: #257934;
+}
+
+.btn-danger{
+	background: #F82547;
+	border:#F82547 ;
+	font-weight: 800;
+}
+
 .pricing-table .plan-detail {
     padding: 0 0 32px;
     padding: 0 0 2rem;
@@ -4283,7 +4308,7 @@ ul.nav1{
 }
 
 .product-shoe-info {
-    background: #9b2626;
+    /* background: #9b2626; */
     padding:0 7px;
     width:100%;
     
@@ -4298,7 +4323,11 @@ ul.nav1{
 }
 
 .item-info-product a{
-    color: #ffffff;
+	color: #ffffff;
+}
+
+.item-info-product h4{
+	padding-top:15px;
 }
 
 
