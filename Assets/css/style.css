@@ -94,18 +94,25 @@ label {
     font-family: 'Varela Round', sans-serif;
 	text-transform:uppercase;
 }
+
+.nav1{
+	margin-right:20px;
+}
+
 .top-nav {
     float: right;
-    width: 47%;
+	display: flex;
+    width:100%;
     margin-top: 12px;
+	
 }
 span.menu{
 	display:none;
 }
 
 .top-nav ul li{
-	display:inline-block;
-    margin: 0 18px;
+	display:inline-flex;
+    margin: 0 12px;
     -webkit-appearance: none !important;
 }
 .top-nav ul li a{
@@ -292,9 +299,11 @@ ul.callbacks_tabs.callbacks1_tabs {
 .caption h3 span{
   border-bottom: 2px solid #1cebe1;
     padding-bottom: 5px;
+	display: none;
 }
 .caption p{
     margin: 0.8em 0em 0;
+	display: none;
 }
 .caption p a{
   color: #fff;
@@ -302,14 +311,16 @@ ul.callbacks_tabs.callbacks1_tabs {
     margin: 0.8em 0em 0;
     letter-spacing: 2px;
     text-decoration: none;
+	display: none;
 }
 .caption p a:hover {
     color: #1cebe1;
 }
 .banner1{
-  background: url(../images/TV\ SLIDER.jpg) no-repeat;
+  background: url(../images/gift\ btc\ slide1.jpg) no-repeat;
   width:100%;
-  min-height: 500px;
+  height: 70vh;
+  z-index: 22;
   background-size: cover;
   background-position: center;
   -webkit-background-size:center;
@@ -319,9 +330,9 @@ ul.callbacks_tabs.callbacks1_tabs {
   background-color: rgba(0, 0, 0, 0.33);
 }
 .banner2{
-  background: url(../images/2.jpg) no-repeat;
+  background: url(../images/data\ slide4.jpg) no-repeat;
   width:100%;
-  min-height: 500px;
+  min-height: 70vh;
    background-size: cover;
   background-position: center;
   -webkit-background-size:center;
@@ -329,7 +340,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   -o-background-size: center;
 }
 .banner3{
-  background: url(../images/DATA\ SLIDER.jpg) no-repeat;
+  background: url(../images/bills\ slide5.jpg) no-repeat;
   width:100%;
   min-height: 500px;
   background-size:contain;
@@ -339,15 +350,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.33);
 }
-.banner4{
-  background: url(../images/offer-bg.jpg) no-repeat;
-  width:100%;
-  min-height: 500px;
-  background-size: center;
-  -webkit-background-size: center;
-  -moz-background-size: center;
-  -o-background-size: center;
-}
+
 
 .header {
     padding: 14px 0;
@@ -2072,7 +2075,7 @@ ul.dropdown-menu.drp-mnu span {
 		font-size: 41px;
 	}
 	.banner {
-		min-height: 550px;
+		min-height:65px;
 	}
 	.buttons {
 		margin-top: 55px;
@@ -2349,7 +2352,7 @@ ul.dropdown-menu.drp-mnu span {
 		margin-top: 125px;
 	}
 	.banner {
-		min-height: 495px;
+		min-height: 65px;
 	}
 	.btm-grid {
 		float: left;
@@ -2529,6 +2532,7 @@ ul.nav1{
 		width: 100%;
 		z-index: 999;
 		padding: 20px 0;
+
 		}
 	.top-nav ul.nav1 li {
 		display: inline-block;
@@ -2547,12 +2551,14 @@ ul.nav1{
 	.logo a {
 		font-size: 24px;
 	}
+
+
 	.top-nav {
 		width: 54%;
 		margin-top: 10px;
 	}
 	.top-nav ul li a {
-		padding: 0 0 12px 0;
+		padding:0 0 2px 0;
 	}
 	.top-nav ul li a {
 		border-bottom: 2px solid transparent;
@@ -2623,7 +2629,7 @@ ul.nav1{
 		margin-top: 48px;
 	}
 	.banner {
-		min-height: 450px;
+		min-height:65px;
 	}
 	.footer h2 a {
 		font-size: 19px;
@@ -2772,7 +2778,7 @@ ul.nav1{
 		font-size: 16px;
 	}
 	.banner {
-		min-height: 410px;
+		min-height: 65px;
 	}
 	.banner-info {
 		margin-top: 85px;
@@ -2872,7 +2878,7 @@ ul.nav1{
 		font-size: 13px;
 	}
 	.banner {
-		min-height: 388px;
+		min-height:65px;
 	}
 	.buttons ul li a {
 		font-size: 14px;
@@ -3237,7 +3243,7 @@ ul.nav1{
 		margin-top: 39px;
 	}
 	.banner {
-		min-height: 342px;
+		min-height:65px;
 	}
 	.mobile-right input.mobile-text[type="text"] {
 		width: 82%;
@@ -3370,7 +3376,7 @@ ul.nav1{
 		font-size: 17px;
 	}
 	.banner {
-		min-height: 307px;
+		min-height: 65px;
 	}
 	.banner-info {
 		margin-top: 60px;
@@ -3474,6 +3480,16 @@ ul.nav1{
 		font-size: 15px;
 		line-height: 1.6em;
 	}
+
+	.caption h3{
+		display: none;
+	}
+
+	.caption p a{
+		display: none;
+	}
+
+
 	.buttons ul li a {
 		font-size: 13px;
 		padding: 4px 11px;
@@ -4071,6 +4087,16 @@ ul.nav1{
     text-align: center;
 }
 
+.hr{
+	border: 1px solid #c0c0c0;
+	margin:25px  0;
+}
+
+.btn-bills{
+	background: #6E0A0A;
+	color: #fff;
+}
+
 .pricing-table .plan-title {
     border-bottom: 1px solid #e6e6e6;
     padding: 25.6px 0;
@@ -4153,6 +4179,16 @@ ul.nav1{
     margin: 0 0 24px;
     margin: 0 0 1.5rem;
     padding: 0;
+	
+}
+
+.plan-detail ul li{
+	padding-bottom:8px;
+	background: #fff;
+}
+
+.plan-detail a{
+	margin-top: 20px;
 }
 
 .pricing-table .plan-detail ul li {
@@ -4292,6 +4328,8 @@ ul.nav1{
   font-weight: 700;
 }
 
+
+
 .Trading_section ul{
      list-style-type: none;
      padding-bottom:10px;
@@ -4336,15 +4374,16 @@ ul.nav1{
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 991px){
    .trade_title h2{
    position: relative;
    left: 30px;
+   margin-top: 50px;
  }
 
 .follows_card h2{
   position: relative;
-  left: 10px;
+  left: -5px;
 }
 
 .trade_list li{
@@ -4386,8 +4425,8 @@ ul.nav1{
 }
 
 .bills_payment{
-  background: #c0c0c0;
-  padding:40px  30px;
+ border:5px solid #6e0a0a;
+  padding:5px  30px;
   margin-top: 50px;
   margin-bottom: 50px;
   box-sizing: 50px;
@@ -4499,3 +4538,54 @@ section {
   /*--------------------------------------------------------------
   # Counts
   --------------------------------------------------------------*/
+
+
+  .cryto{
+	  background: #D2D1D1;
+  }
+
+  @media screen and (max-width:360px){
+	.trade_title h2 {
+		position: relative;
+		left: 10px;
+		margin-top: 50px;
+	}
+
+
+  }
+
+  .mobile  h2{
+      padding-bottom: 10px;
+	  color: #48CFC1;
+  }
+
+  .mobile span {
+	  color: #A9A8A8;
+  }
+
+  .mobile  p{
+	color: #A9A8A8;
+}
+
+.Alldata h2{
+	margin-top: 50px;
+	color: #36335C;
+	font-weight: 900;
+}
+
+.vtu_to_cash{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding: 5px 0;
+	background: rgb(28, 235, 225,0.1);
+	text-align: center;
+	border-right:3px solid #eb6f1c;
+	border-left:3px solid #eb6f1c;
+}
+
+.cryto_title{
+	background: url(../images/gift\ btc\ slide1.jpg)no-repeat;
+	background-size: cover;
+	height: 50vh;
+	background-position: center;
+}
