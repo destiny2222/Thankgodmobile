@@ -1,0 +1,17 @@
+
+@media (max-width: 991px){
+nav , .nav1 li {
+    border-bottom: 1px solid #303537;
+}
+
+}
+
+
+    .sticky {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      border-top: 0;
+    }
