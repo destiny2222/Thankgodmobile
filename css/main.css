@@ -3677,6 +3677,15 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
   color: #262729 !important;
 }
 
+.site-menu-main  .nav-item:nth-child(1) .nav-link-item{
+  color: #0041ff;
+}
+
+.site-menu-main .nav-link-item:hover{
+   border-bottom:1px solid #0041ff;
+   color:#0041ff;
+}
+
 @media (min-width: 480px) {
   .d-xs-inline-flex {
     display: inline-flex !important;
