@@ -3678,12 +3678,11 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
 }
 
 .site-menu-main  .nav-item:nth-child(1) .nav-link-item{
-  color: #0041ff;
+  color: #FF5722;
 }
 
 .site-menu-main .nav-link-item:hover{
-   border-bottom:1px solid #0041ff;
-   color:#0041ff;
+   color:#FF5722;
    transition: all 0.5s ease-in-out;
 }
 
