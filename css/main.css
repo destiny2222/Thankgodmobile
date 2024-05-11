@@ -16756,7 +16756,7 @@ mark[data-aos="highlight-text"].aos-animate {
   .menu-sep-right {
     margin-right: 20px;
   }
-  .menu-sep-right::before {
+  /* .menu-sep-right::before {
     content: "";
     position: absolute;
     right: 0;
@@ -16765,7 +16765,7 @@ mark[data-aos="highlight-text"].aos-animate {
     width: 2px;
     height: 26px;
     border-right: 2px solid var(--border-color-6);
-  }
+  } */
 }
 
 .reveal-header .menu-sep-left::before {
