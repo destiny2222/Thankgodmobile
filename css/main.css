@@ -619,6 +619,10 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape, .light-mod
   background-color: #fff !important;
 }
 
+.card--services-l6:hover .more{
+  color:#0abfbc;
+}
+
 .card-hover__electric-violet-3:hover:hover .card--services-l6__heading {
   color: #fff;
 }
